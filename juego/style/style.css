@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    color: #09347a;
+    background-color: #007dc3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Dos columnas de igual tamaño */
+    grid-gap: 10px;
+    /* Espacio entre los elementos */
+}
+
+#titulo {
+    
+    display: flex;
+    align-content: center;
+
+}
+
+#tarjetas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img:hover {
+    opacity: 50%;
+}
+
+#rival {
+    display: flex;
+    justify-content: center;
+}
+
+
+.button, .buttonAt {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover, buttonAt:hover {
+    background-color: #2980b9;
+}
+
+
+#ataquej, #ataqueR {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Una columna de ancho completo */
+    }
+
+    #tarjetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilos para las celdas de encabezado */
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilos para las celdas de datos */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para las filas impares */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos al pasar el cursor sobre una fila */
+tr:hover {
+    background-color: #e6e6e6;
+}

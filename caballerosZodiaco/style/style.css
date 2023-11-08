@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+    color: #09347a;
+    background-color: #007dc3;
+}
+
+/* #inicio{
+    display:flex;
+    flex-direction: row;
+  justify-content: center;
+} */
+#zonadejuego{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
